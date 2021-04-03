@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+ /* background: linear-gradient(45deg, #6dd441, transparent); */
+ background: #93df73;
+    
+}
+#creator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 4px 0px; */
+    /* background: #c3c3be; */
+    font-size: 19px;
+    /* margin: 0rem 32rem; */
+    /* margin-bottom: 20px; */
+    font-family: 'Lobster', cursive;
+}
+.main-div{
+    background: #e4dea7;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    border-radius: 1rem;
+    box-shadow: 3px 5px 18px 12px grey;
+    object-fit: cover;
+    display: grid;
+    align-items: center;
+    width: 21rem;
+    height: 33rem;
+
+}
+#title{
+    /* background: lightgreen; */
+    margin: 0px 12px;
+    padding: 6px 5.1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Signika', sans-serif;
+}
+#artist{
+    /* background: rgb(71, 211, 71); */
+    margin: 0px 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;       
+    padding: 6px 5.1rem;
+    font-family: 'Signika', sans-serif;
+}
+.image-container{
+  background: #ffffff52;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container img{ 
+    width: 20rem;
+    height: 16rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    width: 15rem;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin: 24px;
+    border-radius: 11rem;
+}
+.buttons{ 
+     margin: 0px 87px;
+}
+ 
+.icons{      
+    padding: 12px 18px;
+}
+#prev:hover {
+    cursor: pointer;
+   background: rgb(199, 196, 196);
+    /* border-radius: 40px; */
+    
+}
+#next:hover {
+    cursor: pointer;
+   background: rgb(199, 196, 196);
+    
+}
+#play:hover {
+    cursor: pointer;
+    background: rgb(199, 196, 196);
+    
+}
+.anime{
+    animation: rotatePlayer 5s linear infinite;
+}
+@keyframes rotatePlayer {
+    form{
+        transform : rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+@media only screen and (max-width :366px){
+
+ #creator {  
+    padding-left: 5rem;
+}
+}
